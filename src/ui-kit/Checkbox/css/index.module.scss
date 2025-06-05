@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.checkbox {
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  border: 1px solid var(--main-default);
+  background-color: var(--background-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &Active {
+    background-color: var(--main-default);
+  }
+
+  &Error {
+    border-color: #A90000;
+  }
+}
+
+.text {
+  margin-top: 1px;
+
+  &Error {
+    color: #A90000;
+  }
+}

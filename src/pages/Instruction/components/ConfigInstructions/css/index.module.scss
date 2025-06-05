@@ -1,0 +1,67 @@
+.instruction {
+  width: 100%;
+  background-color: var(--background-default);
+}
+
+.instructionInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0;
+  max-height: 830px;
+}
+.frameWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueFrame {
+  width: 820px;
+  height: 520px;
+  background-color: var(--background-light);
+  border: 15px solid var(--main-light);
+  border-radius: 20px;
+}
+
+.descriptionWrapper{
+  line-height: 140%;
+  max-width: 560px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.buttonWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+
+
+
+@media (max-width: 900px) {
+  .instructionInner {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0 35px;
+    gap: 20px;
+  }
+
+  .frameWrapper{
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .blueFrame {
+    height: 70vw;
+  }
+}

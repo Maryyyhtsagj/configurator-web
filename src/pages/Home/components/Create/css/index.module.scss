@@ -1,0 +1,166 @@
+.create {
+  width: 100%;
+  background-color: var(--background-light);
+  overflow: hidden;
+}
+
+.createWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 55px 0 65px;
+}
+
+.createLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-size: 32px;
+  margin-bottom: 32px;
+  line-height: 40px;
+}
+
+.createInner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.createFeature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-default);
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureTitle {
+  font-size: 14px;
+  font-family: Font-Medium, sans-serif;
+  margin-bottom: 8px;
+}
+
+.featureDescription {
+  font-family: Font-Light, sans-serif;
+  line-height: 140%;
+  max-width: 357px;
+}
+
+.buttonWrapper {
+  margin-top: 30px;
+
+  &.desktopButton {
+    display: block;
+  }
+
+  &.mobileButton {
+    display: none;
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+
+.createConfigButton {
+
+}
+
+.createRight {
+  //position: absolute;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptopPlaceholder {
+  width: 100%;
+  transform: scale(1.3);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    //display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .createWrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0 23px;
+  }
+
+  .createLeft {
+    width: 100%;
+  }
+
+  .createRight {
+    width: 100%;
+  }
+
+  .mainTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 130%;
+  }
+
+  .createFeature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featureTitle {
+    font-size: 13px;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+
+    &.desktopButton {
+      display: none;
+    }
+
+    &.mobileButton {
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
+    }
+  }
+  .laptopPlaceholder {
+    margin-top: 23px;
+    max-width: 100%;
+    width: 303px;
+  }
+}
+

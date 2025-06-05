@@ -1,0 +1,23 @@
+.newProjectModal {
+  width: 236px;
+}
+
+.title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 130%;
+}
+
+.selectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

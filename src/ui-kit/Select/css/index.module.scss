@@ -1,0 +1,64 @@
+.select {
+  position: relative;
+}
+
+.list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 74px;
+  width: 100%;
+  background-color: var(--background-default);
+  border-radius: 10px;
+  border: 1px solid var(--background-light);
+  box-shadow: 0 2px 14px 0 #00000026;
+  padding: 18px 10px;
+  overflow-y: auto;
+  z-index: 1;
+
+  &Visible {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &Low {
+    top: 60px;
+  }
+
+  &Item {
+    height: 34px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: var(--main-default);
+
+      & .listItemText {
+        color: var(--text-inverse);
+      }
+    }
+
+    &:active {
+      background-color: var(--main-pressed);
+    }
+
+    &Text {
+      margin-top: 1px;
+      transition: color .2s;
+    }
+  }
+}
+
+.emptyText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

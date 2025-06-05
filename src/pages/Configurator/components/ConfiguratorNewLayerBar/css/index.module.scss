@@ -1,0 +1,16 @@
+.newLayerBar {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  z-index: -1;
+  height: 242px;
+  background-color: #4b4bff;
+  border-radius: 1px;
+  opacity: 0;
+  transition: transform .2s;
+
+  &.visible {
+    opacity: 1;
+    z-index: 2;
+  }
+}

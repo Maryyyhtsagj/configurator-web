@@ -1,0 +1,49 @@
+.citySelectModal {
+  width: 255px;
+  height: 330px;
+  padding: 10px 15px 12px;
+
+  .scrollable {
+    width: 225px;
+    height: 238px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+  }
+
+  .cityItem {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    border-radius: 4px;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: var(--main-default);
+
+      .cityName {
+        color: var(--text-inverse);
+      }
+    }
+    &:active {
+      background-color: var(--main-pressed);
+
+      .cityName {
+        color: var(--text-inverse);
+      }
+    }
+  }
+
+  .loading {
+    height: calc(100% - 54px);
+  }
+
+  .cityName {
+    margin-top: 2px;
+    transition: color 0.2s;
+  }
+}

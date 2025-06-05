@@ -1,0 +1,74 @@
+.citySelectBigModal {
+  width: 90vw;
+  height: calc(100vh - 120px);
+
+  max-width: 1122px;
+  max-height: 696px;
+
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 28px;
+  }
+
+  .clearButton {
+    margin-top: 10px;
+  }
+
+  .inputsRow {
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .cityItem {
+    font-size: 13px;
+    line-height: 140%;
+
+    &Bold {
+      font-family: Font-Medium, sans-serif;
+    }
+
+    &Empty {
+      height: 18.2px;
+    }
+  }
+
+  .list {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+  }
+
+  .loading {
+    width: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .citySelectBigModal {
+    width: calc(100vw - 82px);
+    .title {
+      font-size: 20px;
+    }
+
+    .inputsRow {
+      flex-direction: column;
+      margin-top: 0;
+      gap: 0;
+      width: 240px;
+      align-items: flex-end;
+    }
+  }
+}

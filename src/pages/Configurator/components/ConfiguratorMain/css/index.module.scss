@@ -1,0 +1,28 @@
+.configuratorMain {
+  width: calc(100% - 353px);
+
+  & * {
+    -webkit-tap-highlight-color: transparent; /* Removes blue tap highlight on mobile */
+    -webkit-user-select: none; /* Prevents text selection on iOS Safari */
+    user-select: none;         /* Prevents selection in general */
+  }
+}
+
+/*.row {
+  margin-top: 100px;
+  height: 500px;
+  width: 700px;
+  background-color: #ffeded;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: relative;
+}*/
+
+@media (max-width: 900px) {
+  .configuratorMain {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--main-default);
+  background-color: var(--background-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &Active {
+    background-color: var(--main-default);
+  }
+
+  &Inner {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: var(--background-default);
+  }
+}
+
+.text {
+  margin-top: 1px;
+}

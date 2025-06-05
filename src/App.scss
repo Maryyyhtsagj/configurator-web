@@ -1,0 +1,95 @@
+.blueHorizontalScroll {
+  &::-webkit-scrollbar {
+    height: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--background-second);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--main-hover);
+    border-radius: 5px;
+  }
+}
+
+.blueVerticalScroll {
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--background-second);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--main-hover);
+    border-radius: 5px;
+  }
+}
+
+* {
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--background-second);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--main-hover);
+    border-radius: 5px;
+  }
+}
+
+
+.pressable {
+  cursor: pointer;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+.pressableLight {
+  cursor: pointer;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.noScrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 1270px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  /*background: rgba(255, 0, 0, 0.18);*/
+}
+
+.noSelection {
+  -webkit-tap-highlight-color: transparent; /* Removes blue tap highlight on mobile */
+  -webkit-user-select: none; /* Prevents text selection on iOS Safari */
+  user-select: none;         /* Prevents selection in general */
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+

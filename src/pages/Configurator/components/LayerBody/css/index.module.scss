@@ -1,0 +1,72 @@
+.glass {
+  width: 45px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--main-light);
+}
+
+.gas {
+  width: 60px;
+  height: 100%;
+  border-radius: 5px;
+  //margin: 0 25px;
+  background-color: var(--background-second);
+  border: 1px solid var(--text-second);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &Inner {
+    height: 204px;
+    border-top: 1px solid var(--text-second);
+    border-bottom: 1px solid var(--text-second);
+    background-color: var(--background-light);
+  }
+}
+
+.interlayer {
+  width: 12px;
+  height: 100%;
+  border-radius: 3px;
+  border: 1px solid var(--main-hover);
+  background-color: var(--background-light);
+}
+
+.cover {
+  width: 18px;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--main-hover);
+
+  &Dotted {
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--background-light);
+    background-image: url('../../../../../../public/assets/images/dotted_bg.svg');
+    background-size: 16px 10px;
+    background-position: -1.2px 2px;
+    background-repeat: repeat;
+  }
+  &Splash {
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--main-hover);
+  }
+}
+
+.template {
+  width: 45px;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--main-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &Text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 15px;
+  }
+}
+

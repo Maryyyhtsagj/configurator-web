@@ -1,0 +1,13 @@
+.authorization {
+  padding-top: 40px;
+
+  &Inner {
+
+  }
+}
+
+@media (max-width: 900px) {
+  .authorization {
+    padding: 30px 0 32px;
+  }
+}

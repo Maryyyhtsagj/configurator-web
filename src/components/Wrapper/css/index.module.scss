@@ -1,0 +1,29 @@
+.wrapper {
+  //height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  .scrollableContent {
+    height: calc(100% - var(--header-height));
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: calc(var(--header-height));
+  }
+
+  .main {
+    min-height: calc(100% - var(--footer-height));
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+@media (max-width: 900px) {
+  .wrapper {
+    .main {
+      padding-top: 52px;
+    }
+  }
+}
+*/

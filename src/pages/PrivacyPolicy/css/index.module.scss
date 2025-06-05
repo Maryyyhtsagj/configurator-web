@@ -1,0 +1,32 @@
+.privacy{
+  width: 100%;
+  background-color: var(--background-default);
+
+  &Inner{
+    width: 100%;
+    padding: 37px 0;
+  }
+}
+.mainTitle {
+  font-size: 14px;
+  font-family: Font-Bold,sans-serif;
+  margin-bottom: 8px;
+}
+
+.subTitle {
+  font-size: 14px;
+  line-height: 140%;
+  font-family: Font-Light, sans-serif;
+}
+
+
+@media (max-width: 900px) {
+  .mainTitle {
+    font-size: 13px;
+  }
+
+  .subTitle {
+    font-size: 13px;
+    line-height: 150%;
+  }
+}

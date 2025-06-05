@@ -1,0 +1,11 @@
+.floatingLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+
+  //width: 100px;
+  //height: 100px;
+  //background-color: green;
+}

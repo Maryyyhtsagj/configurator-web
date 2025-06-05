@@ -1,0 +1,32 @@
+.configuratorTopRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 38px 0;
+}
+
+.citySelect {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.refresh {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  & p {
+    color: var(--main-disabled);
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 900px) {
+  .configuratorTopRow {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0 0;
+    gap: 10px;
+  }
+}

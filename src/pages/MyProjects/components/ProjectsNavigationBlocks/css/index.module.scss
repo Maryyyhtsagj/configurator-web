@@ -1,0 +1,57 @@
+.navigationBlock {
+  display: flex;
+  border-bottom: 1px solid var(--background-second);
+  gap: 10px;
+  padding: 20px 0 0 18px;
+
+  .navigationItem {
+    height: 30px;
+    padding: 0 30px;
+    position: relative;
+    bottom: -1px;
+    width: 234px;
+    transition: all .2s;
+
+    &Text {
+      font-family: Font-Light, sans-serif;
+      font-size: 15px;
+      width: 100%;
+      text-align: center;
+      transition: all .4s;
+    }
+
+    &Selected {
+      border-bottom: 2px solid var(--main-default);
+
+      .navigationItemText {
+        font-family: Font-Bold, sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .navigationBlock {
+    gap: 0;
+    padding-left: 0;
+    .navigationItem {
+      max-width: 50%;
+      padding: 0 0;
+
+      &Text {
+        font-size: 13px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .navigationBlock {
+    .navigationItem {
+      width: 50% !important;
+    }
+  }
+}

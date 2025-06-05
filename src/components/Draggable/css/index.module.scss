@@ -1,0 +1,7 @@
+.draggable {
+  user-select: none;
+  overscroll-behavior-y: contain;
+  //touch-action: pan-x pan-y;
+  touch-action: none;
+}
+

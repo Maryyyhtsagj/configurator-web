@@ -1,0 +1,25 @@
+.configuratorBottomRow {
+  margin-top: 32px;
+}
+
+.componentsList {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+@media (max-width: 900px) {
+  .configuratorBottomRow {
+    margin-top: 28px;
+    margin-bottom: 38px;
+  }
+
+  .componentsList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    padding: 0 15px;
+  }
+}

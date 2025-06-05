@@ -1,0 +1,13 @@
+.enterPassword {
+  padding-top: 40px;
+
+  &Inner {
+
+  }
+}
+
+@media (max-width: 900px) {
+  .enterPassword {
+    padding: 30px 0 32px;
+  }
+}

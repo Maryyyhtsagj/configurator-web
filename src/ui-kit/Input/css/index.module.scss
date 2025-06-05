@@ -1,0 +1,134 @@
+.inputWrapper {
+  position: relative;
+  //width: fit-content;
+}
+
+.inputHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title {
+  line-height: 140%;
+}
+
+.required {
+  margin-left: 4px;
+  color: var(--alert-second);
+}
+
+.hintWrapper {
+  position: relative;
+}
+.hintButton {
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: var(--main-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  position: relative;
+
+  .rightIcon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
+
+.input {
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px solid var(--background-second);
+  background-color: var(--background-default);
+
+  font-size: 13px;
+  color: var(--text-default);
+
+  transition: border-color .2s;
+
+  &:focus {
+    border-color: var(--main-default)
+  }
+
+  &Error {
+    border-color: #d20000
+  }
+
+  &::placeholder {
+    color: var(--text-second);
+  }
+}
+
+.textarea {
+  padding-top: 10px;
+}
+
+.hint {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  background-color: var(--background-default);
+  border-radius: 10px;
+  min-width: 290px;
+  box-shadow: 0 2px 14px 0 #00000026;
+  left: 30px;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%) translateX(-10px);
+  transition: opacity .2s, transform .2s;
+
+  &Text {
+    font-family: Font-Light, sans-serif;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  &Visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+.error {
+  color: #d20000;
+  font-family: Font-Light, sans-serif;
+  margin: 8px 0 0 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 900px) {
+  .hintWrapper {
+    position: unset;
+  }
+  .inputWrapper {
+    position: relative;
+  }
+  .hint {
+    left: 50%;
+    top: 30px;
+    transform: translateY(-10px) translateX(-50%);
+
+    &Visible {
+      transform: translateY(0) translateX(-50%);
+    }
+  }
+}

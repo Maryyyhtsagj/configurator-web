@@ -1,0 +1,225 @@
+.instruction {
+  width: 100%;
+  background-color: var(--background-light);
+}
+
+.instructionWrapper {
+  padding: 60px 0 120px;
+  position: relative;
+}
+
+.headerWrapper {
+  margin-bottom: 73px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.mainDescription {
+  margin-bottom: 32px;
+}
+
+.instructionInner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+
+.backgroundSvg {
+  position: absolute;
+  //width: 100%;
+  transform-origin: bottom left;
+  bottom: 35px;
+  left: 43px;
+  z-index: 1;
+
+  img {
+    width: 914px;
+    height: 311px;
+    object-fit: contain;
+  }
+}
+
+.instructionStepsRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.instructionStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  z-index: 2;
+}
+
+.stepNumberWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  //justify-content: center;
+  //position: relative;
+}
+
+.stepNumber {
+  font-size: 70px;
+  font-family: Font-Medium, sans-serif;
+  color: var(--background-second);
+}
+
+.stepIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-default);
+  //position: absolute;
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  //margin-top: 130px;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  gap: 7px;
+  max-width: 222px;
+}
+
+.stepTitle {
+  font-size: 16px;
+  font-family: Font-Medium, sans-serif;
+}
+
+.stepDescription {
+  font-family: Font-Light, sans-serif;
+  line-height: 1.5;
+}
+
+.buttonWrapper {
+  display: flex;
+  margin-top: 32px;
+  &.mobileButton {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.desktopButton {
+  display: block;
+}
+
+.stepOne {
+}
+
+.stepTwo {
+  margin-top: -67px;
+}
+
+.stepThree {
+  margin-top: -180px;
+
+  .stepContent {
+    max-width: 247px;
+  }
+}
+
+.bottomText {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  z-index: 1;
+
+  img {
+    width: 352px;
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .instructionWrapper {
+    padding: 30px 0 37px;
+    position: relative;
+  }
+
+  .instructionStepsRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .mainTitle {
+    font-size: 20px;
+  }
+
+  .instructionStep {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    width: 100%;
+
+    .stepContent {
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .headerWrapper {
+    text-align: center;
+  }
+
+  .instructionInner {
+    flex-direction: column;
+  }
+
+  .stepNumberWrapper {
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .backgroundSvg {
+    display: none;
+  }
+
+  .stepNumber {
+    font-size: 48px;
+  }
+
+  .stepOne, .stepTwo, .stepThree {
+    margin-top: 0;
+  }
+
+  .stepIcon {
+    margin-top: 0;
+    position: static;
+    width: 48px;
+    height: 48px;
+  }
+
+  .buttonWrapper {
+    &.mobileButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //margin-top: 30px;
+    }
+    &.desktopButton {
+      display: none;
+    }
+  }
+
+  .bottomText{
+    display: none;
+  }
+}

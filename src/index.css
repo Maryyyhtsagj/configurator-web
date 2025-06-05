@@ -1,0 +1,134 @@
+/*!*800*!*/
+/*@font-face {*/
+/*  font-family: "Font-Bold";*/
+/*  src: url("../public/assets/fonts/HelveticaNeue/HelveticaNeueBlack.otf") format('opentype');*/
+/*}*/
+/*700*/
+@font-face {
+  font-family: "Font-Bold";
+  src: url("../public/assets/fonts/HelveticaNeue/HelveticaNeueBold.otf") format('opentype');
+}
+
+/*500*/
+@font-face {
+  font-family: "Font-Medium";
+  src: url("../public/assets/fonts/HelveticaNeue/HelveticaNeueMedium.otf") format('opentype');
+}
+
+/*400*/
+@font-face {
+  font-family: "Font-Regular";
+  src: url("../public/assets/fonts/HelveticaNeue/HelveticaNeueRoman.otf") format('opentype');
+}
+
+/*300*/
+@font-face {
+  font-family: "Font-Light";
+  src: url("../public/assets/fonts/HelveticaNeue/HelveticaNeueLight.otf") format('opentype');
+}
+/*200*/
+@font-face {
+  font-family: "Font-Thin";
+  src: url("../public/assets/fonts/HelveticaNeue/HelveticaNeueThin.otf") format('opentype');
+}
+
+
+
+
+
+:root {
+  --main-default: #081B4D;
+  --main-hover: #4B629E;
+  /*--main-pressed: #020A20;*/
+  --main-pressed: #8e94a4;
+  --main-light: #B5C7F6;
+  --main-disabled: #ACB2C3;
+
+  --text-default: #1A1A1A;
+  --text-second: #A6A6A6;
+  --text-inverse: #FFFFFF;
+
+  --alert-second: #A90000;
+
+  --background-default: #FFFFFF;
+  --background-second: #E8E8E8;
+  --background-light: #FAFAFA;
+
+  --header-height: 68px;
+  --footer-height: 120px;
+
+  --scrollbar-width: 10px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-height: 52px;
+    --footer-height: 337px;
+    --scrollbar-width: 6px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Font-Regular, sans-serif;
+  color: var(--text-default);
+  font-size: 13px;
+  /*-ms-overflow-style: none;  !* IE and Edge *!*/
+  /*scrollbar-width: none;  !* Firefox *!*/
+}
+
+/**::-webkit-scrollbar {
+  display: none;
+}*/
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow-y: hidden;
+  /*overflow-x: auto;*/
+}
+
+input, textarea {
+  /*font-size: 13px;*/
+  /*color: #061F40;*/
+  /*border: none;*/
+  outline: none;
+  resize: none;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  outline: none;
+  border: 0;
+  background-color: unset;
+}
+
+::placeholder {
+  color: #7F8A99;
+}
+
+.row {
+  display: flex;
+}
+
+/* Disable blue overlay */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

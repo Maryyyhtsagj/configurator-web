@@ -1,0 +1,60 @@
+.materialItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 20px;
+  background-color: var(--background-light);
+  border-radius: 6px;
+  border: 1px solid var(--main-default);
+  margin-bottom: 5px;
+  height: 38px;
+  cursor: move;
+  transition: background-color .2s;
+
+  &Name {
+    margin-top: 2px;
+    font-size: 13px;
+    height: 14px;
+    transition: color .2s;
+  }
+
+  &Icon {
+    margin-top: 2px;
+    font-size: 14px;
+    height: 14px;
+    transition: filter .2s;
+  }
+
+  .draggable {
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 200px;
+  }
+
+  &:hover, &:active {
+    background-color: var(--main-default);
+
+    .materialItemName {
+      color: var(--background-default);
+    }
+
+    .materialItemIcon {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &:active {
+    background-color: var(--main-pressed);
+    border: 1px solid var(--main-pressed);
+  }
+ }
+
+.path {
+  font-size: 12px;
+  margin-bottom: 2px;
+  color: var(--text-default);
+  font-family: Font-Light, sans-serif;
+}

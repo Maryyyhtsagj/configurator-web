@@ -1,0 +1,34 @@
+.characteristicsCircles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  background-color: var(--background-light);
+  border-radius: 50%;
+
+  &Num {
+    font-size: 15px;
+    line-height: 130%;
+    color: var(--main-default);
+  }
+
+  &Value {
+    & p {
+      font-size: 14px;
+      font-family: Font-Light, sans-serif;
+      color: var(--main-disabled);
+      line-height: 22px;
+    }
+
+    & span {
+      font-size: 9px;
+      font-family: Font-Light, sans-serif;
+      margin-top: 9px;
+      margin-left: 1px;
+      margin-right: 4px;
+      color: var(--main-disabled);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.configurator {
+}
+
+.topRow {
+  height: 654px;
+  display: flex;
+  background-color: var(--background-light);
+
+  &OnlyConfigurator {
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+  }
+}
+
+@media (max-width: 900px) {
+  .topRow {
+    flex-direction: column;
+    height: unset;
+    //min-height: unset;
+  }
+}

@@ -1,0 +1,13 @@
+.questions {
+  padding-top: 40px;
+
+  &Inner {
+
+  }
+}
+
+@media (max-width: 900px) {
+  .questions {
+    padding: 30px 0 32px;
+  }
+}

@@ -1,0 +1,83 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 8px;
+  border: 1px solid var(--main-default);
+  background-color: var(--main-default);
+
+  cursor: pointer;
+  transition: background-color .2s, border-color .2s;
+}
+
+.text {
+  margin-top: 1px;
+  font-family: Font-Regular, sans-serif;
+  color: var(--text-inverse);
+  transition: color .2s;
+}
+
+.main {
+  background-color: var(--main-default);
+  border-color: var(--main-default);
+
+  &:hover:not(.disabled) {
+    background-color: var(--main-hover);
+    border-color: var(--main-hover);
+  }
+  &:active:not(.disabled) {
+    background-color: var(--main-pressed);
+    border-color: var(--main-pressed);
+  }
+}
+
+.secondary {
+  background-color: var(--background-default);
+  border-color: var(--main-default);
+  & .text {
+    color: var(--text-default);
+  }
+
+  &:hover:not(.disabled) {
+    background-color: var(--main-hover);
+    border-color: var(--main-hover);
+    & .text {
+      color: var(--text-inverse);
+    }
+  }
+  &:active:not(.disabled) {
+    background-color: var(--main-pressed);
+    border-color: var(--main-pressed);
+    & .text {
+        color: var(--text-inverse);
+    }
+  }
+}
+
+.inverse {
+  background-color: var(--main-default);
+  border-color: var(--background-default);
+
+  &:hover:not(.disabled) {
+    background-color: var(--background-default);
+    border-color: var(--background-default);
+    & .text {
+      color: var(--main-hover);
+    }
+  }
+  &:active:not(.disabled) {
+    background-color: var(--background-second);
+    border-color: var(--background-default);
+  }
+}
+
+.disabled {
+  background-color: var(--main-disabled);
+  border-color: var(--main-disabled);
+  cursor: default;
+
+  & .text {
+    color: var(--text-inverse);
+  }
+}

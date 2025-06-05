@@ -1,0 +1,110 @@
+.select {
+  position: relative;
+  width: 264px;
+}
+
+.mainRow {
+  position: absolute;
+  width: 100%;
+  height: 43px;
+  top: 27px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 12px;
+  padding-right: 57px;
+  cursor: pointer;
+}
+
+.tag {
+  cursor: default;
+  height: 20px;
+  padding: 2px 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 3px;
+  background-color: var(--main-default);
+
+  &Name {
+    color: var(--text-inverse);
+  }
+
+  &Icon {
+
+  }
+}
+
+.list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 72px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 296px;
+  background-color: var(--background-default);
+  border-radius: 10px;
+  border: 1px solid var(--background-light);
+  box-shadow: 0 2px 14px 0 #00000026;
+  padding: 10px 15px 10px 0;
+  z-index: 1;
+
+  &Visible {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Scrollable {
+    padding: 10px 16px 12px 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  &Item {
+    margin-bottom: 10px;
+  }
+}
+
+.listInputRow {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tickButton {
+  width: 58px;
+  height: 38px;
+  background-color: var(--main-default);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: var(--main-hover);
+  }
+  &:active {
+    background-color: var(--main-pressed);
+  }
+
+  &Disabled {
+    cursor: default;
+    background-color: var(--main-default) !important;
+  }
+
+  &SelfSaved {
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+}
+
+.emptyText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
